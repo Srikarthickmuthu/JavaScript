@@ -6,15 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="operators/operators.js"></script>
+    <script src="conditionalStatements/conditional.js"></script>
+    <script src="conditionalStatements/switchcase.js"></script>
+    <script src="looping/loop.js"></script>
 </head>
 <body>
     <h1>Operators</h1>
     <form>
     <label>Enter the number:</label>
-    <input type="number" id="anum" required><br><br>
+    <input type="number" id="anum"><br><br>
     <lable>Enter the number:</lable>
-    <input type="number" id="bnum" required><br><br>
+    <input type="number" id="bnum"><br><br>
     <button  onclick="operators()"> Operators </button>
 </form>
+    <h1>Conditional statements</h1>
+    <form>
+        <lable>ENter the value of a :</lable>
+        <input type="number" id="avalue"><br><br>
+        <lable>ENter the value of b :</lable>
+        <input type="number" id="bvalue"><br><br>
+        <lable>ENter the value of c :</lable>
+        <input type="number" id="cvalue"><br><br>
+        <button onclick="biggest()">Submit </button>
+    </form>
+
+    <h1>Switch case</h1>
+    <form>
+        <lable>Select the vaule in drop down list :</lable>
+        <select id="selected" onclick="return switchcase()">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+    </form>
+
+    <h1>Looping</h1>
+    <form>
+    <lable>Enter the value :</lable>
+    <input type="number" id="avalue" min="1">
+    <button onclick="loop()">Start the loop</button>
+</form>
+
 </body>
 </html>
