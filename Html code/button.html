@@ -27,7 +27,7 @@
     <pre>     This is the para : para  </pre>
     <script>
         const name1= document.querySelector('h1');
-        const para1=document.querySelector('p');
+        const para1=document.querySelector('pre');
 
         name1.addEventListener('click' , updateName);
         para1.addEventListener('click' , updatePara);
@@ -37,7 +37,7 @@
             name1.textContent = `This is Heading : ${name2}`;
         }
         function updatePara(){
-            const para2=prompt('Enter the para :');
+            const para2=alert('Enter the para :');
             para1.textContent=`This is the para : ${para2}`;
         }
         
