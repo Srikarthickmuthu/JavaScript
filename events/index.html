@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>Click </button>
+    <p></p>
+    <script>
+        var a = document.querySelector('button');
+        a.addEventListener('click', para);
+        var para = document.querySelector('p');
+        function para() {
+            para.textContent = "hello";
+        }
+    </script>
+
+    <form>
+        Enter your first name : <input id="fname" type="text"><br><br>
+        Enter your last name : <input id="lname" type="text"><br><br>
+        <input id="submit" type="submit">
+        <pre></pre>
+    </form>
+
+    <div id="container">
+        <button>Click here</button>
+    </div>
+    <pre id="output"></pre>
+    <script>
+        var form = document.querySelector('form');
+        var fname = document.getElementById('fname');
+        var lname = document.getElementById('lname');
+        var para1 = document.querySelector('pre');
+
+        form.addEventListener('submit', (e) => {
+            if (fname.value == '' || lname.value == '') {
+                e.preventDefault();
+                para1.textContent = 'fill all the values';
+                para1.innerHTML='<h1>Fill all the values</h1>';
+            }
+        });
+
+        var container=document.querySelector('#container');
+        container.addEventListener('click',handleClick);
+        var output=document.querySelector('#output');
+        function handleClick(event){
+            output.textContent+=`You clicked on a ${event.currentTarget.tagName} element\n`;
+        }
+    </script>
+</body>
+
+</html>

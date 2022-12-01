@@ -29,7 +29,6 @@ function passgenerate(event){
     console.log(lpass);
     event.preventDefault();
     
-
     var querry=document.querySelector('div');
     querry.textContent(`<input type='text' value= ${lpass}>`)
 
