@@ -1,0 +1,53 @@
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+   background-color: antiquewhite;
+}
+li{
+    padding: 15px 10px;   
+}
+li:hover{
+    background-color: gray;
+}
+body{
+
+    background-color: azure; 
+    border: 2px solid black;
+    height: 50%;
+    width: 50%;
+    overflow: scroll;
+
+}
+.top-container{
+    margin-left: 50%;
+    background-color: rgb(235, 164, 176);
+    display:flex;
+    justify-content: flex-start;
+    position:fixed;
+    
+}
+h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style:oblique;
+}
+#images{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 20px;
+}
+img{
+    height: 250px;
+    width: 250px;
+    border: solid 2px blue;
+    border-spacing: 50px;
+}
+img:hover{
+    box-shadow: 10px 5px 15px burlywood;
+}
+#scroll1{
+    padding-left: 50px;
+    
+}
