@@ -11,6 +11,7 @@ console.log(array.shift());
 console.log(array);
 console.log(array.splice(3));
 console.log(array);
+console.log(array[3][1]);
 
 var string = array.toString();
 console.log(string);
