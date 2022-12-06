@@ -6,23 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="webapp.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 
 </head>
 
-<body id="body">
-
+<body>
     <div>
-        <div class="top-container" id="tag">
+        <div class="header">
             <h1>Cricbuzz...</h1>
-            <div id="scroll1">
-
-            </div>
-
         </div>
         <nav>
             <ul>
-                <li>Live Scores</li>
                 <li>Schedules</li>
                 <li>Archives</li>
                 <li>News</li>
@@ -33,6 +27,11 @@
                 <li>More</li>
             </ul>
         </nav>
+        <div id="navbar">
+            <h2>Live Scores :</h2>
+            <pre></pre>
+        </div>
+
         <div id="images">
             <div>
                 <img src="../crick images/image1.jpeg" alt="image1">
@@ -65,9 +64,22 @@
                 <img src="../crick images/image5.jpeg" alt="image1">
             </div>
         </div>
-        
     </div>
-    
+
 </body>
-<script src="webapp.js"></script>
+<script>
+    window.onscroll = function () { myFunction() };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
+
 </html>
