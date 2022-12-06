@@ -46,7 +46,8 @@
         });
 
         var container=document.querySelector('#container');
-        container.addEventListener('click',handleClick);
+        // container.addEventListener('click',handleClick);
+        container.onclick=handleClick;
         var output=document.querySelector('#output');
         function handleClick(event){
             output.textContent+=`You clicked on a ${event.currentTarget.tagName} element\n`;
