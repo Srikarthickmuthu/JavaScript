@@ -37,9 +37,9 @@
         var lname = document.getElementById('lname');
         var para1 = document.querySelector('pre');
 
-        form.addEventListener('submit', (e) => {
+        form.addEventListener('submit', (event) => {
             if (fname.value == '' || lname.value == '') {
-                e.preventDefault();
+                event.preventDefault();
                 para1.textContent = 'fill all the values';
                 para1.innerHTML='<h1>Fill all the values</h1>';
             }
@@ -52,8 +52,6 @@
         function handleClick(event){
             output.textContent+=`You clicked on a ${event.currentTarget.tagName} element\n`;
         }
-
-
     </script>
     <div ></div>
 </body>

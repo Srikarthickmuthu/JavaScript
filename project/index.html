@@ -28,8 +28,6 @@
             </ul>
         </nav>
         <div id="navbar">
-            <h2>Live Scores :</h2>
-            <pre></pre>
         </div>
 
         <div id="images">
@@ -68,7 +66,7 @@
 
 </body>
 <script>
-    window.onscroll = function () { myFunction() };
+    window.onscroll = myFunction;
 
     var navbar = document.getElementById("navbar");
     var sticky = navbar.offsetTop;
@@ -76,8 +74,10 @@
     function myFunction() {
         if (window.pageYOffset >= sticky) {
             navbar.classList.add("sticky")
+            navbar.innerHTML='<h2>Live Scores</h2>'           
         } else {
             navbar.classList.remove("sticky");
+            navbar.innerHTML='';
         }
     }
 </script>

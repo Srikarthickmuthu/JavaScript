@@ -8,7 +8,5 @@ function biggest(){
         document.write("<p>B is bigger</p>");}
     else{""
         document.write("<p>C is bigger</p>");
-    }
-    
-    
+    }  
 }

@@ -6,4 +6,3 @@ do{
     value++;
 }while(value<val);
 }
-
