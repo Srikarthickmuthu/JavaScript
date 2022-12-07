@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,14 +18,15 @@
     <lable>Enter the number:</lable>
     <input type="number" id="bnum"><br><br>
     <button  onclick="operators()"> Operators </button>
+    <per id="output"></per>
 </form>
     <h1>Conditional statements</h1>
     <form>
-        <lable>ENter the value of a :</lable>
+        <lable>Enter the value of a :</lable>
         <input type="number" id="avalue"><br><br>
-        <lable>ENter the value of b :</lable>
+        <lable>Enter the value of b :</lable>
         <input type="number" id="bvalue"><br><br>
-        <lable>ENter the value of c :</lable>
+        <lable>Enter the value of c :</lable>
         <input type="number" id="cvalue"><br><br>
         <button onclick="biggest()">Submit </button>
     </form>
@@ -43,8 +44,9 @@
     <h1>Looping</h1>
     <form>
     <lable>Enter the value :</lable>
-    <input type="number" id="avalue" min="1">
+    <input type="number" id="loopValue" min="1">
     <button onclick="loop()">Start the loop</button>
+    <p id="loopAns"></p>
 </form>
 
 </body>

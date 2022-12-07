@@ -26,18 +26,18 @@
     <h1>    This is Heading : name  </h1>
     <pre>     This is the para : para  </pre>
     <script>
-        const name1= document.querySelector('h1');
-        const para1=document.querySelector('pre');
+        var name1= document.querySelector('h1');
+        var para1=document.querySelector('pre');
 
         name1.addEventListener('click' , updateName);
         para1.addEventListener('click' , updatePara);
 
         function updateName(){
-            const name2 = prompt('Enter your name here:');
+            var name2 = prompt('Enter your name here:');
             name1.textContent = `This is Heading : ${name2}`;
         }
         function updatePara(){
-            const para2=alert('Enter the para :');
+            var para2=alert('Enter the para :');
             para1.textContent=`This is the para : ${para2}`;
         }
         

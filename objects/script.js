@@ -43,7 +43,5 @@ console.log(details);
 details.changeMobNum(1234567890);
 details.changeSalary(23000);
 console.log(details);
-
 console.log(delete details.id);
 console.log(details);
-

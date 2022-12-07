@@ -29,57 +29,67 @@
         </nav>
         <div id="navbar">
         </div>
-
-        <div id="images">
-            <div>
-                <img src="../crick images/image1.jpeg" alt="image1">
-            </div>
-            <div>
-                <img src="../crick images/image2.jpeg" alt="image2">
-            </div>
-            <div>
-                <img src="../crick images/image3.jpeg" alt="image1">
-            </div>
-            <div>
-                <img src="../crick images/image4.jpeg" alt="image2">
-            </div>
-            <div>
-                <img src="../crick images/image5.jpeg" alt="image1">
-            </div>
-            <div>
-                <img src="../crick images/image1.jpeg" alt="image1">
-            </div>
-            <div>
-                <img src="../crick images/image2.jpeg" alt="image2">
-            </div>
-            <div>
-                <img src="../crick images/image3.jpeg" alt="image1">
-            </div>
-            <div>
-                <img src="../crick images/image4.jpeg" alt="image2">
-            </div>
-            <div>
-                <img src="../crick images/image5.jpeg" alt="image1">
-            </div>
-        </div>
+        <table>
+        <tr>
+            <td style="width:50%;">
+                <div id="images">
+                    <div>
+                        <img src="../crick images/image1.jpeg" alt="image1">
+                    </div>
+                    <div>
+                        <img src="../crick images/image2.jpeg" alt="image2">
+                    </div>
+                    <div>
+                        <img src="../crick images/image3.jpeg" alt="image1">
+                    </div>
+                    <div>
+                        <img src="../crick images/image4.jpeg" alt="image2">
+                    </div>
+                    <div>
+                        <img src="../crick images/image5.jpeg" alt="image1">
+                    </div>
+                    <div>
+                        <img src="../crick images/image1.jpeg" alt="image1">
+                    </div>
+                    <div>
+                        <img src="../crick images/image2.jpeg" alt="image2">
+                    </div>
+                    <div>
+                        <img src="../crick images/image3.jpeg" alt="image1">
+                    </div>
+                    <div>
+                        <img src="../crick images/image4.jpeg" alt="image2">
+                    </div>
+                    <div>
+                        <img src="../crick images/image5.jpeg" alt="image1">
+                    </div>
+                </div>
+            </td>
+            <td style="width: 50%;">
+                    <iframe src="index2.html" width="1000" height="3000"></iframe>
+            </td>
+        </tr>
+        </table>
     </div>
 
-</body>
-<script>
-    window.onscroll = myFunction;
+    <script>
+        window.onscroll = myFunction;
 
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
 
-    function myFunction() {
-        if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-            navbar.innerHTML='<h2>Live Scores</h2>'           
-        } else {
-            navbar.classList.remove("sticky");
-            navbar.innerHTML='';
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+                navbar.innerHTML = '<h2>Live Scores</h2>'
+            } else {
+                navbar.classList.remove("sticky");
+                navbar.innerHTML = '';
+            }
         }
-    }
-</script>
+    </script>
+
+</body>
+
 
 </html>

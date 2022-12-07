@@ -2,47 +2,29 @@ function operators(){
 var a = document.getElementById('anum').value;
 var b= document.getElementById('bnum').value;
 var c='text';
-var l="<br>"
-document.write('Arithematic operators');
-document.write(l);
-document.write("a + b =",(a+b));
-document.write(l);
-document.write("a + b + c =",(a+b+c));
-document.write(l);
-document.write("a - b =",(a-b));
-document.write(l);
-document.write("a * b =",a*b);
-document.write(l);
-document.write("a / b =",a/b);
-document.write(l);
-document.write("a % b =",a%b);
-document.write(l);
-document.write("a ++ =",a++);
-document.write(l);
-document.write("b -- =",b--);
-document.write(l);
-document.write(l);
+var l="<br>";
+var output=document.querySelector('#output');
+console.log('Arithematic operators');
+console.log("a + b =",(a+b));
+console.log("a + b + c =",(a+b+c));
+console.log("a - b =",(a-b));
+console.log("a * b =",a*b);
+console.log("a / b =",a/b);
+console.log("a % b =",a%b);
+console.log("a ++ =",a++);
+console.log("b -- =",b--);
 
-document.write('Comparison operators')
-document.write(l);
-document.write("a == b ",a==b);
-document.write(l);
-document.write("a > b ",a>b);
-document.write(l);
-document.write("a < b ",a<b);
-document.write(l);
-document.write("a != b ",a!=b);
-document.write(l);
-document.write("a <= b ",a<=b);
-document.write(l);
-document.write("a >= b ",a>=b);
-document.write(l);
-document.write(l);
+console.log('Comparison operators')
+console.log("a == b ",a==b);
+console.log("a > b ",a>b);
+console.log("a < b ",a<b);
+console.log("a != b ",a!=b);
+console.log("a <= b ",a<=b);
+console.log("a >= b ",a>=b);
 
-document.write('Conditional operators');
-document.write(l);
-document.write((a<b)?'a is small':'b is small');
+console.log('Conditional operators');
+console.log((a<b)?'a is small':'b is small');
 
-
+event.preventDefault();
 
 }

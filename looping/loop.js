@@ -1,8 +1,9 @@
 function loop(){
-var value=0;
-var val=document.getElementById('avalue').value;
-do{
-    document.write('count :'+value+"<br>");
-    value++;
-}while(value<val);
+    console.log('in for loop');
+    var value=document.getElementById('loopValue').value;
+    var i;
+    for(i=1 ; i<=value ; i++){
+        console.log('Entered value is :'+i);
+    }
+    event.preventDefault();
 }

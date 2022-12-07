@@ -2,12 +2,12 @@
 function switchcase(){
     var selected=document.getElementById("selected").value;
     switch(selected){
-        case '1':document.write("sunday");
+        case '1':console.log("sunday");
                 break;
-        case '2':document.write("monday");
+        case '2':console.log("monday");
                 break;
-        case '3':document.write("tuesday");
+        case '3':console.log("tuesday");
                 break;
-        default: document.write("No values");
+        default: console.log("No values");
     }
 }
