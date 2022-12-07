@@ -1,3 +1,4 @@
+function mapFilter(){
 var array=[22,33,11,1,4,55];
 
 var array1=array.filter(age=>age>=18);
@@ -25,4 +26,4 @@ var array3=array.forEach(age=>{
 });
 
 console.log(array3);
-
+}
