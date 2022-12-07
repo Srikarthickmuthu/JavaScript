@@ -1,3 +1,6 @@
+function array(){
+
+    var arrayContent=document.getElementById('arrayContent');
 var array = ['first', 'second', 'third', [1, 2, 3]];
 console.log(array.length);
 console.log(array.indexOf('second'));
@@ -22,3 +25,4 @@ var arr1=[1,2,3];
 var arr2=['karthick' ,123];
 var arr4=arr1.concat(arr2);
 console.log(arr4);
+}

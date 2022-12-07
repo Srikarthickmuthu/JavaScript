@@ -3,10 +3,11 @@ function biggest(){
     var b=document.getElementById('bvalue').value;
     var c=document.getElementById('cvalue').value;
     if(a>b && a>c){
-        document.write("<h1>A is bigger</h1>");}
+        console.log("A is bigger");}
     else if(b>a && b>c){
-        document.write("<p>B is bigger</p>");}
-    else{""
-        document.write("<p>C is bigger</p>");
+        console.log("B is bigger");}
+    else{
+        console.log("C is bigger");
     }  
+    event.preventDefault();
 }

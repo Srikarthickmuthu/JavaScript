@@ -1,3 +1,5 @@
+function string(){
+    
 var string1 = " This is the sting of values in the type of character ";
 console.log(string1);
 console.log(string1.length);
@@ -32,3 +34,4 @@ console.log(string1.charCodeAt(10)); //return ascii value
 console.log(string1.replace(' ' , '$'));
 console.log(string1.replaceAll(' ' , '$'));
 console.log(string1);
+}

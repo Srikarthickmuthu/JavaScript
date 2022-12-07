@@ -1,9 +1,10 @@
 function operators(){
+    
 var a = document.getElementById('anum').value;
 var b= document.getElementById('bnum').value;
 var c='text';
 var l="<br>";
-var output=document.querySelector('#output');
+
 console.log('Arithematic operators');
 console.log("a + b =",(a+b));
 console.log("a + b + c =",(a+b+c));

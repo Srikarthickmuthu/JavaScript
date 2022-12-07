@@ -15,7 +15,7 @@ body {
     opacity: 75%;
 }
 
-.sticky {
+.navScroll {
     position: fixed;
     top: 0;
     width: 100%;
