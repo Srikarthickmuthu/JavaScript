@@ -1,4 +1,4 @@
-function object(){
+//function object(){
 //creating objects by literals
 
 employeeDetails={name : 'karthick' , empId : 10453 ,salary:25000 };
@@ -45,4 +45,4 @@ details.changeSalary(23000);
 console.log(details);
 console.log(delete details.id);
 console.log(details);
-}
+//}
