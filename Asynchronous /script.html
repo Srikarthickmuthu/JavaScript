@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        Asynchronous
+    </h1>
+    <form>
+        <lable for="quota">Number of primes :</lable>
+        <input type="number" id="quota" name="quota" value="1000000" />
+
+        <button id="generate">
+            Grenerate Primes
+        </button>
+        <button id="reload">
+            Reload
+        </button>
+        <div id="output"></div>
+    </form>
+    <script>
+        var quota = document.querySelector('quota');
+        var output = document.querySelector('output');
+
+        const primeMax = 1000000;
+
+        document.querySelector('#generate').addEventListener('click', () => {
+
+            const primes = generatePrimes(quota.value);
+            output.textContent = `Finished generating the prime of total ${quota.value}`;
+        });
+
+        document.querySelector('#reload').addEventListener('click', () => {
+            document.location.reload();
+        });
+
+        function isPrime(n) {
+            for (let i = 2; i <= Math.sqrt(n); i++) {
+                if (n % i == 0) {
+                    return false;
+                }
+            }
+            return n > 1;
+        }
+        const random = (max) => Math.floor(Math.random() * max);
+
+        function generatePrimes(quota) {
+            const prime = [];
+            while (primes.length < quota) {
+                const candidate = random(primeMax);
+                if (isPrime(candidate)) {
+                    prime.push(candidate);
+                }
+            }
+            return primes;
+        }
+    </script>
+</body>
+
+</html>

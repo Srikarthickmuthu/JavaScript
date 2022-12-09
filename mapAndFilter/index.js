@@ -1,29 +1,11 @@
-function mapFilter(){
-var array=[22,33,11,1,4,55];
+const array1=[1,2,3,4,5,6,7,8,9,10];
 
-var array1=array.filter(age=>age>=18);
+const map1=array1.map(a=>a*2);
+console.log(map1);
 
-console.log(array1);
+const filter1=array1.filter(a=>a%2==0);
+console.log(filter1);
 
-var array2=array.map(age=>{
-    if(age>=18){
-        return age;
-    }
-    else{
-        return false;
-    }
-});
+const filter2=array1.map(a=>a%2==0);
+console.log(filter1);
 
-console.log(array2);
-
-var array3=array.forEach(age=>{
-    if(age>=18){
-        return age;
-    }
-    else{
-        return false;
-    }
-});
-
-console.log(array3);
-}
