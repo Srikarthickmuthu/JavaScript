@@ -46,3 +46,32 @@ console.log(details);
 console.log(delete details.id);
 console.log(details);
 //}
+
+// //Array of objects
+
+// let employeeDetails=[
+//     {empName:'karthick',
+//     empId:'Ace111',
+//     position:'trainee'
+//     },
+//     {
+//         empName:'vijay',
+//         empId:'Ace122',
+//         position:'trainee'
+//     }
+// ]
+let newEmployeeDetails={name : 'karthick' , empId : 10453 ,salary:25000 };
+console.log(employeeDetails);
+employeeDetails.push(newEmployeeDetails);
+console.log(employeeDetails)
+employeeDetails.unshift(newEmployeeDetails);
+console.log(employeeDetails)
+employeeDetails.pop(newEmployeeDetails);
+console.log(employeeDetails)
+employeeDetails.shift(newEmployeeDetails);
+console.log(employeeDetails)
+employeeDetails.splice(1,0,newEmployeeDetails);
+console.log(employeeDetails)
+
+let finda=employeeDetails.find(()=>employeeDetails.empId=='Ace122')
+console.log(finda)

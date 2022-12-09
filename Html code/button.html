@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        pre,h1{
+        pre,
+        h1 {
             border: 2px solid blueviolet;
-            border-radius: 20px;
             background-color: antiquewhite;
-            text-align: center;
-            width: max-content;
-            font-size: 3rem;
+            padding: 20px;
+            border-radius: 10px;
             cursor: pointer;
-            position: relative;
-
         }
     </style>
 
 </head>
+
 <body>
 
     </style>
-    <h1>    This is Heading : name  </h1>
-    <pre>     This is the para : para  </pre>
+    <h1> This is Heading : name </h1>
+    <pre style="font-size:20px;">     This is the para : para  </pre>
     <script>
-        var name1= document.querySelector('h1');
-        var para1=document.querySelector('pre');
+        var name1 = document.querySelector('h1');
+        var para1 = document.querySelector('pre');
 
-        name1.addEventListener('click' , updateName);
-        para1.addEventListener('click' , updatePara);
+        name1.addEventListener('click', updateName);
+        para1.addEventListener('click', updatePara);
 
-        function updateName(){
+        function updateName() {
             var name2 = prompt('Enter your name here:');
             name1.textContent = `This is Heading : ${name2}`;
         }
-        function updatePara(){
-            var para2=alert('Enter the para :');
-            para1.textContent=`This is the para : ${para2}`;
+        function updatePara() {
+            var para2 = prompt('Enter the para :');
+            para1.textContent = `This is the para : ${para2}`;
         }
-        
+
     </script>
 </body>
+
 </html>
