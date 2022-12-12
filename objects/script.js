@@ -1,7 +1,7 @@
 //function object(){
 //creating objects by literals
 
-employeeDetails={name : 'karthick' , empId : 10453 ,salary:25000 };
+let employeeDetails={name : 'karthick' , empId : 10453 ,salary:25000 };
 console.log(employeeDetails.empId);
 console.log(employeeDetails);
 
@@ -13,9 +13,11 @@ console.log(emp);
 
 //by using object constructor
 
-function emp1(lname,age){
-    this.lname=lname;
-    this.age=age;
+class emp1 {
+    constructor(lname, age) {
+        this.lname = lname;
+        this.age = age;
+    }
 }
 e=new emp1('kumar' , 22);
 console.log(e.lname+e.age);

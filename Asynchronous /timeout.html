@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Timeouts</h1>
+
+    <button onclick="myStopFunction()">Stop time out</button>
+    <br><br>
+    <button onclick="clearMyInterval()">Stop intervals</button>
+    <script>
+        const myTimeout = setTimeout(myGreeting, 3000);
+
+        function myGreeting() {
+            console.log('hello all');
+        }
+
+        function myStopFunction() {
+            clearTimeout(myTimeout);
+        }
+        const myInterval=setInterval(myWishes , 1000);
+
+        function myWishes(){
+            console.log('Welcome');
+        }
+
+        function clearMyInterval(){
+            clearInterval(myInterval);
+        }
+    </script>
+</body>
+
+</html>
