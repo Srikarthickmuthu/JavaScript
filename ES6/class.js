@@ -13,4 +13,3 @@ class Model extends Car{
 }
   const myCar = new Model("Ford", 2022,'newmodel');
   console.log(myCar.name + " " + myCar.year+" "+myCar.model);
- 

@@ -1,6 +1,6 @@
 //Extended parameter handling
 function f(x,y=6){
-    sum=x+y;
+    sum=x+y
 }
 f(1)
 if(sum==7){
@@ -14,3 +14,7 @@ const filePath = String.raw`/home/asplap3262/Desktop/JavaScript/ES6/script.js`;
 
 console.log(`The file was uploaded from: ${filePath}`);
 
+//array.from
+
+let arr=Array.from("This is a string");
+console.log(arr);
