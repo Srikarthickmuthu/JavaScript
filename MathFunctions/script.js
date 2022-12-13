@@ -10,5 +10,9 @@ console.log(Math.sqrt(4))
 console.log(Math.SQRT1_2)
 console.log(Math.SQRT2)
 console.log(Math.pow(10,2));
-console.log(Math.random(5));
-console.log(Math.trunc(2.44));
+console.log(Math.random());
+
+//ES6
+console.log(Math.trunc(-1.88));
+console.log(Math.sign(-4));
+console.group(Math.cbrt(8));

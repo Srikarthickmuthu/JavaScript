@@ -3,9 +3,9 @@ var a=20;
 
 console.log(a);
 
-// let b;
+//let b;
 let b=10;
-// let b=20;
+//let b=20;
 
 console.log(b);
 

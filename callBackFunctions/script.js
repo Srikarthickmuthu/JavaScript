@@ -17,5 +17,5 @@ function func1(output) {
     output = func3(output);
     console.log(`output: ${output}`);
   }
-  
+  funcMain();
   

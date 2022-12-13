@@ -35,3 +35,32 @@ console.log(string1.replace(' ' , '$'));
 console.log(string1.replaceAll(' ' , '$'));
 console.log(string1);
 }
+
+
+//es6 full support to UTF-6
+let str="𠮷abc";
+console.log(str.charCodeAt(0));
+console.log(str.charAt(0));
+
+//ES6
+
+console.log(str.startsWith("𠮷"));
+console.log(str.endsWith("c"));
+console.log(str.includes("b"));
+
+console.log("A".repeat(5));
+
+// let str2="hello 
+// world";             //multi line in string is not possible
+
+let str2="hello \n\
+World";                 //before es6
+console.log(str2);
+
+let str3=`Hello 
+World 
+Of 
+Happiness`;
+
+console.log(str3);
+
