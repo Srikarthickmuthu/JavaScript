@@ -10,3 +10,4 @@ console.log(filter1);
 
 console.log(array1.forEach(a=>a*2)); //undefined
 
+

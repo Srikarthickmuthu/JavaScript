@@ -1,4 +1,4 @@
-function array(){
+// function array(){
 //var arrayContent=document.getElementById('arrayContent');
  var array = ['first', 'second', 'third', [1, 2, 3]];
 console.log(array.length);
@@ -16,7 +16,7 @@ console.log(array);
 console.log(array[1]);
 array[1]='another';
 console.log(array);
-delete array[1];
+//delete array[1];
 var string = array.toString();
 console.log(string);
 
@@ -27,9 +27,9 @@ console.log(arr4);
 
 //splice
 console.log(array)
-var spliced=array.splice(2,0,'karthickkkkk');
+var spliced=array.splice(2,0,'karthickkkkk','kumar');
 console.log(array)
 
 //splice({index where to start} , {how many items to remove} , {items to add})
 
-}
+// }

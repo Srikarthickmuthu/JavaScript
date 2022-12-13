@@ -1,5 +1,3 @@
-function operators(){
-    
 var a = document.getElementById('anum').value;
 var b= document.getElementById('bnum').value;
 var c='text';
@@ -26,6 +24,3 @@ console.log("a >= b ",a>=b);
 console.log('Conditional operators');
 console.log((a<b)?'a is small':'b is small');
 
-event.preventDefault();
-
-}

@@ -1,6 +1,6 @@
-function loop(){
+
     console.log('in for loop');
-    var value=document.getElementById('loopValue').value;
+    var value=5;
     var i;
     for(i=1 ; i<=value ; i++){
         
@@ -18,5 +18,4 @@ function loop(){
         k++;
         
     }while(k<=value);
-    event.preventDefault();
-}
+
