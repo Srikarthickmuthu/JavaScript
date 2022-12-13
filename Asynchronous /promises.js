@@ -5,8 +5,8 @@ const p1 = new Promise((res, rej)=>{
 })
 const p2 = new Promise((res, rej)=>{
     setTimeout(() => {
-        rej('failure');
-    }, 1000);
+        res('failure');
+    }, 2000);
 })
 
 // p1.then(console.log);

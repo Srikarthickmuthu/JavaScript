@@ -3,12 +3,12 @@ async function myFunc(){
         setTimeout(()=>{
             resolve('success')
         },3000)
-        
     });
 }
 async function awaitFn(){
-    const output=await myFunc();
+    //console.log("hello");
+    const output=myFunc().then(console.log);
     console.log("hello");
-    console.log(output);
+   
 }
 awaitFn();
